@@ -1,0 +1,20 @@
+<suite name="MyGroupingSuite">
+	<listeners>
+		<listener class-name="utilities.ExtentReportUtility" />
+	</listeners>
+	<test name="MyGroupingTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+			<run>
+				<include name="smoke"></include>
+				<!-- <include name="regression"></include> -->
+				<!-- <exclude name="smoke"></exclude> -->
+			</run>
+		</groups>
+		<classes>
+			<class name="testcases.LoginTest"></class>
+			<class name="testcases.HomeTest"></class>
+			<!-- <class name="testcases.WorkersTest"></class> -->
+		</classes>
+	</test>
+</suite>

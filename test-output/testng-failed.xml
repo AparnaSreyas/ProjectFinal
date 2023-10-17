@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite3]">
+  <listeners>
+    <listener class-name="utilities.ExtentReportUtility"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testcases.BankDetailsTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyBankDetails" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.BankDetailsTest -->
+    </classes>
+  </test> <!-- ChromeTest1(failed) -->
+  <test thread-count="5" name="EdgeTest1(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testcases.BankDetailsTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="verifyBankDetails" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.BankDetailsTest -->
+    </classes>
+  </test> <!-- EdgeTest1(failed) -->
+</suite> <!-- Failed suite [MyTestSuite3] -->
